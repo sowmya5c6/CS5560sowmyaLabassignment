@@ -1,1 +1,5 @@
 # CS5560sowmyaLabassignment
+
+Tutorial 1A wiki:https://github.com/sowmya5c6/CS5560sowmyaLabassignment/wiki/Tutorial-1A
+
+Tutorial 1B wiki:https://github.com/sowmya5c6/CS5560sowmyaLabassignment/wiki/Tutorial-1B
