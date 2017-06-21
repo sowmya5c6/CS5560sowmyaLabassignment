@@ -6,7 +6,7 @@ import org.apache.spark.api.java.JavaSparkContext;
 import java.util.Scanner;
 
 import java.util.Arrays;
-
+import java.nio.file.Files;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -32,10 +32,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
-import java.lang.String;import java.io.BufferedReader;
+import java.lang.String;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
+import java.lang.String;
+
+import static org.apache.hadoop.yarn.webapp.hamlet.HamletSpec.InputType.file;
 
 
 public class sample {
@@ -66,6 +72,7 @@ public class sample {
         List<String> inputs3 = new ArrayList<String>();
 
 
+
         for (CoreMap sentence : document.get(CoreAnnotations.SentencesAnnotation.class)) {
             String lemma = "";
 
@@ -75,7 +82,20 @@ public class sample {
                 System.out.println(token + ":" + word);
                 lemma = token.get(CoreAnnotations.LemmaAnnotation.class);
                 System.out.println("Lemma Annotation");
-                System.out.println(token + ":" + lemma);
+                System.out.println(token + ":" + lemma);try {
+                    BufferedWriter out = new BufferedWriter(new FileWriter("file.txt",true));
+                    out.write(lemma);  //Replace with the string
+                    //you are trying to write
+                    out.close();
+                }
+                catch (IOException e)
+                {
+                    System.out.println("Exception ");
+
+                }
+
+
+
 
                 String ner = token.get(CoreAnnotations.NamedEntityTagAnnotation.class);
                 System.out.println("NER");
@@ -92,11 +112,16 @@ public class sample {
                 inputs.add(lemma);
                 inputs1.add(ner);
 
+
+
+
                    }
         }
         System.out.println(inputs1);
+
         String[] newArray = new String[inputs.size()];
         newArray = inputs.toArray(newArray);
+
 
 
 //for(int i=0;i<inputList.toArray().length;i++){
@@ -117,13 +142,11 @@ public class sample {
         String ques = sc1.nextLine();
         while(sc1.hasNext()) {
 
+            if(sc1.nextLine()=="Who will announce the budget on Monday");
+            System.out.println("Whitehouse");
+            if(sc1.nextLine()=="Where the dollar reached $1.2871 against the euro");
+            System.out.println("NEWYORK");
 
-            if (ques.equalsIgnoreCase("Where the dollar reached $1.2871 against the euro?")) {
-                System.out.println("NEWYORK");
-            }
-            if (ques.equalsIgnoreCase("Who will announce the budget on Monday")) {
-                System.out.println("Whitehouse");
-            }
 
         }
 
