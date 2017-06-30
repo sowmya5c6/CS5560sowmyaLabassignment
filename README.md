@@ -7,3 +7,5 @@ Tutorial 1B wiki:https://github.com/sowmya5c6/CS5560sowmyaLabassignment/wiki/Tut
 Tutorial 2 wiki:https://github.com/sowmya5c6/CS5560sowmyaLabassignment/wiki/Tutorial-2
 
 Tutorial 3 wiki:https://github.com/sowmya5c6/CS5560sowmyaLabassignment/wiki/Tutorial-3
+
+Tutorial 4 wiki:https://github.com/sowmya5c6/CS5560sowmyaLabassignment/wiki/Tutorial-4
