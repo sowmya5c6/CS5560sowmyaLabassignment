@@ -1,0 +1,48 @@
+
+Corpus summary:
+	 Training set size: 40 documents
+	 Vocabulary size: 29757 terms
+	 Preprocessing time: 36.876975491 sec
+
+Finished training KMeans model.  Summary:
+	 Training time: 2.48311961 sec
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file1/8;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file1/2;2
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file1/7;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file1/4;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file1/5;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file1/9;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file1/6;4
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file1/10;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file1/1;2
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file1/3;2
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file2/8;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file2/2;4
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file2/7;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file2/4;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file2/5;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file2/9;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file2/6;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file2/10;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file2/1;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file2/3;4
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file3/8;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file3/2;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file3/7;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file3/4;4
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file3/5;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file3/9;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file3/6;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file3/10;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file3/1;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file3/3;2
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file4/59497;0
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file4/59874;1
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file4/59871;2
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file4/59873;1
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file4/59849;2
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file4/59848;2
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file4/59846;2
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file4/59870;4
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file4/59850;3
+file:/home/sowmya/Desktop/Spark_MachineLearning/data/20_news/file4/59872;2
