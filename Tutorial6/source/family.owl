@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/sowmya/ontologies/2017/6/untitled-ontology-4"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/sowmya/ontologies/2017/6/untitled-ontology-4">
+    <Prefix name="" IRI="http://www.semanticweb.org/sowmya/ontologies/2017/6/untitled-ontology-4#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <ObjectProperty IRI="#hasgender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gender"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blacks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#white"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#haschild"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#asian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tomas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#female"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ethnicity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hascolor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#daughter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#american"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasparent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#marianna"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#whites"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#black"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#andrew"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fullname"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#male"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#son"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hascontinent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Father"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#african"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#person"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Father"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#haschild"/>
+                <Class IRI="#daughter"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasgender"/>
+                <NamedIndividual IRI="#male"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#african"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#hascolor"/>
+            <NamedIndividual IRI="#blacks"/>
+        </ObjectHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#asian"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Ethnicity"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hascolor"/>
+                <NamedIndividual IRI="#whites"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#daughter"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasparent"/>
+                <Class IRI="#person"/>
+            </ObjectSomeValuesFrom>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasgender"/>
+                <NamedIndividual IRI="#female"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Father"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#african"/>
+        <Class IRI="#Ethnicity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#american"/>
+        <Class IRI="#Ethnicity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#asian"/>
+        <Class IRI="#Ethnicity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#daughter"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mother"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#person"/>
+        <ObjectMaxCardinality cardinality="2">
+            <ObjectProperty IRI="#hasparent"/>
+            <Class IRI="#person"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#son"/>
+        <Class IRI="#person"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Ethnicity"/>
+        <Class IRI="#Gender"/>
+        <Class IRI="#person"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#andrew"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ethnicity"/>
+        <NamedIndividual IRI="#blacks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gender"/>
+        <NamedIndividual IRI="#female"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gender"/>
+        <NamedIndividual IRI="#male"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#marianna"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#sam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#person"/>
+        <NamedIndividual IRI="#tomas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ethnicity"/>
+        <NamedIndividual IRI="#whites"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasgender"/>
+        <NamedIndividual IRI="#marianna"/>
+        <NamedIndividual IRI="#female"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasgender"/>
+        <NamedIndividual IRI="#sam"/>
+        <NamedIndividual IRI="#female"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullname"/>
+        <NamedIndividual IRI="#andrew"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">andrewjames</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullname"/>
+        <NamedIndividual IRI="#sam"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">samantha</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fullname"/>
+        <NamedIndividual IRI="#tomas"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tomasencript</Literal>
+    </DataPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#hascolor"/>
+        <ObjectProperty IRI="#hascontinent"/>
+    </EquivalentObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#haschild"/>
+        <ObjectProperty IRI="#hasparent"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#haschild"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasgender"/>
+        <Class IRI="#person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasgender"/>
+        <Class IRI="#Gender"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#hascontinent"/>
+        <ObjectProperty IRI="#hasgender"/>
+    </DisjointObjectProperties>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fullname"/>
+        <Class IRI="#person"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#fullname"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fullname"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
