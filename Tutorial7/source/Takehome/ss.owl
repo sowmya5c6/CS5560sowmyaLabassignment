@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/sowmya/ontologies/2017/6/untitled-ontology-28"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/sowmya/ontologies/2017/6/untitled-ontology-28">
+    <Prefix name="" IRI="http://www.semanticweb.org/sowmya/ontologies/2017/6/untitled-ontology-28#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Associate_professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#visitor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ucm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#medicine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#associatedwithproject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alumunus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Md"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#physicology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#faculty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#msstudent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jordan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#studied"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assistantprofessor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#srikar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sowmya"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#taught"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jaya"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relatedpublication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kdm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#subjects"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#srinivas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#undergraduate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#student"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#umkc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#phdstudent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#srikar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#computers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasvisited"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Associate_professor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#faculty"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#associatedwithproject"/>
+                <NamedIndividual IRI="#computers"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#relatedpublication"/>
+                <NamedIndividual IRI="#computers"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#taught"/>
+                <NamedIndividual IRI="#kdm"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#msstudent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#student"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#associatedwithproject"/>
+                <NamedIndividual IRI="#computers"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#relatedpublication"/>
+                <NamedIndividual IRI="#computers"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#studied"/>
+                <NamedIndividual IRI="#Ase"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#studied"/>
+                <NamedIndividual IRI="#kdm"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#phdstudent"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#student"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#associatedwithproject"/>
+                <NamedIndividual IRI="#medicine"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#relatedpublication"/>
+                <NamedIndividual IRI="#medicine"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#studied"/>
+                <NamedIndividual IRI="#physicology"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Assistantprofessor"/>
+        <Class IRI="#faculty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Associate_professor"/>
+        <Class IRI="#faculty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Md"/>
+        <Class IRI="#Alumunus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ms"/>
+        <Class IRI="#Alumunus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bs"/>
+        <Class IRI="#Alumunus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#msstudent"/>
+        <Class IRI="#student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#phdstudent"/>
+        <Class IRI="#student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#srikar"/>
+        <Class IRI="#student"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#undergraduate"/>
+        <Class IRI="#student"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#subjects"/>
+        <NamedIndividual IRI="#Ase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#course"/>
+        <NamedIndividual IRI="#computers"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#faculty"/>
+        <NamedIndividual IRI="#jaya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#faculty"/>
+        <NamedIndividual IRI="#jordan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#subjects"/>
+        <NamedIndividual IRI="#kdm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#course"/>
+        <NamedIndividual IRI="#medicine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#subjects"/>
+        <NamedIndividual IRI="#physicology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#student"/>
+        <NamedIndividual IRI="#sowmya"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#student"/>
+        <NamedIndividual IRI="#srikar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#student"/>
+        <NamedIndividual IRI="#srinivas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#visitor"/>
+        <NamedIndividual IRI="#ucm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#visitor"/>
+        <NamedIndividual IRI="#umkc"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#associatedwithproject"/>
+        <NamedIndividual IRI="#sowmya"/>
+        <NamedIndividual IRI="#computers"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasvisited"/>
+        <NamedIndividual IRI="#sowmya"/>
+        <NamedIndividual IRI="#umkc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasvisited"/>
+        <NamedIndividual IRI="#srinivas"/>
+        <NamedIndividual IRI="#umkc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#associatedwithproject"/>
+        <Class IRI="#faculty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#associatedwithproject"/>
+        <Class IRI="#student"/>
+    </ObjectPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
